@@ -24,6 +24,11 @@ fn main() -> Result<()> {
 
     let pb = indicatif::ProgressBar::new((content.lines().count() - 1) as u64);
 
+    // Logger
+    env_logger::init();
+    info!("Starting up");
+    warn!("Upps Nothing to warn of");
+
     for line in content.lines() {
         thread::sleep(Duration::from_millis(1000));
         if line.contains(&args.pattern) {
