@@ -1,7 +1,7 @@
 ### Simple Grep CLI
 
 
-This script can go through a file and search for a pattern: 
+This script can go through a file and print lines that contain a specified pattern: 
 
 `cargo run -- pattern file_path`
 
